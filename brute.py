@@ -123,7 +123,7 @@ def iqbalz(password):
         log = sub.geturl()
         if log != login and (not 'login_attempt' in log):
                         print("\033[92;1m\n\n[+]\033[97;1m Password Find \033[31;1m===| \033[96;1m{}".format(password)) 
-                    rint " "
+                        print " "
                         raw_input(WW+"TEKAN ENTER UNTUK KELUAR.....")
                         sys.exit(1)
 
