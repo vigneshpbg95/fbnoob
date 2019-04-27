@@ -1,6 +1,5 @@
 #!usr
 # -*- coding: UTF-8 -*-
-# Mod by: iqbalz noobs
 # team: life of programmer
 
 
@@ -35,15 +34,6 @@ def runntxt(s):
 
 def banner():
     os.system('clear')
-    print " "
-    runntxt(GL+"              welcome To vicky_Hack
-    runntxt(WW+"     \                 
-    runntxt(WW+"      \
-    runntxt(GL+"       \
-    runntxt(GG+"        \
-    runntxt(Y+"          \
-    runntxt(GG+"          \   
-    time.sleep(1.5)
     print GG+"  √=============================================√"
     print GL+"  |••••••   NEW TOOLS HACK FACEBOOK BF.   ••••••|"
     print GG+"  √=============================================√"
