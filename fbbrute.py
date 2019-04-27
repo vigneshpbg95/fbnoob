@@ -171,7 +171,7 @@ def runn_noobs():
               `-/+///..````..://+/-`
                   `.-::////::-.` \033[91;1m
                 \033[90;1mLife Of Programmer\033[91;1m
-             Powered by:\033[97m Iqbalz Noobs
+             Powered by:\033[97m vigneshpbg95
       """
 
 
