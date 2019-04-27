@@ -1,5 +1,6 @@
 #!usr
 # -*- coding: UTF-8 -*-
+# Mod by: vigneshpbg95
 # team: life of programmer
 
 
@@ -34,12 +35,22 @@ def runntxt(s):
 
 def banner():
     os.system('clear')
+    print " "
+    runntxt(GL+"              welcome To vickyHackz ^_^")
+    runntxt(WW+"                 \\          //   ")
+    runntxt(WW+"                  \\        //    ")
+    runntxt(GL+"                   \\      //     ")
+    runntxt(GG+"                    \\    //       ")
+    runntxt(Y+"                      \\  //       ")
+    runntxt(GG+"                      \\//         ")
+    time.sleep(1.5)
     print GG+"  √=============================================√"
     print GL+"  |••••••   NEW TOOLS HACK FACEBOOK BF.   ••••••|"
     print GG+"  √=============================================√"
-    print WW+"  |            MOD BY: vigneshpbg95             |"             
+    print WW+"  |            MOD BY: vigneshpbg95             |"
+    print GL+"  |       Berdoa Dulu Sebelum Menggunakan       |"
     print WW+"  |            FACEBOOK: vigneshwaran muthukumaran           |"
-    print Y+"  |             INSTAGRAM: vigneshwaran.muthukumaran             |"
+    print Y+"  |             INSTAGRAM: vigneshwaran.muthukumaran            |"
     print GL+"  |---------------------------------------------|"
     print GL+"  |        LIFE OF PROGRAMMER [ L.O.P ]         |"
     print GL+"  |---------------------------------------------|"
@@ -49,7 +60,7 @@ def banner():
 
 banner()
 
-print wd+"         https://www.github.com/vigneshpbg95 "
+print wd+"         https://www.github.com/IqbalzNoobs "
 print GG+"╭────\033[91m[\033[96m Masukkan ID\033[95m / \033[96mUsername Target\033[91m ] "
 email_target = str(raw_input(GL+"\033[92m╰────➲\033[93m  "))
 print " "
