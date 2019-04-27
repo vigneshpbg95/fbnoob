@@ -60,7 +60,7 @@ def banner():
 
 banner()
 
-print wd+"         https://www.github.com/IqbalzNoobs "
+print wd+"         https://www.github.com/vigneshpbg95"
 print GG+"╭────\033[91m[\033[96m Masukkan ID\033[95m / \033[96mUsername Target\033[91m ] "
 email_target = str(raw_input(GL+"\033[92m╰────➲\033[93m  "))
 print " "
