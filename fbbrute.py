@@ -1,5 +1,5 @@
 _Author_="Joychondroghosh@gmail.com"
-__version__ = "0.1Joy"
+__version__ = "vicky_1.0.1"
 
 import time
 import getopt
